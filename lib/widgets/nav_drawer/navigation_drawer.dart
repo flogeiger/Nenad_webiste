@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:nenad_web/routing/route_names.dart';
 import 'package:nenad_web/widgets/nav_drawer/drawer_item.dart';
 import 'package:nenad_web/widgets/nav_drawer/navigation_drawer_header.dart';
 
@@ -13,8 +14,8 @@ class CostumeNavigationDrawer extends StatelessWidget {
       child: Column(
         children: <Widget>[
           NavigationDrawerHeader(),
-          const DrawerItem('Episodes', Icons.videocam),
-          const DrawerItem('About', Icons.help),
+          const DrawerItem('Episodes', Icons.videocam, EpisodesRoute),
+          const DrawerItem('About', Icons.help, AboutRoute),
         ],
       ),
     );

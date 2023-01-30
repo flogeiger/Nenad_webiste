@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:nenad_web/views/home/home_view.dart';
+import 'package:nenad_web/locator.dart';
+import 'package:nenad_web/views/layout_template/layout_template.dart';
 
 void main() {
+  setupLocator();
   runApp(MyApp());
 }
 
@@ -16,7 +18,7 @@ class MyApp extends StatelessWidget {
               fontFamily: 'Open Sans',
             ),
       ),
-      home: HomeView(),
+      home: LayoutTemplate(),
     );
   }
 }
